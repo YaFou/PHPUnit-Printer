@@ -1,0 +1,45 @@
+{
+    "name": "yafou/phpunit-printer",
+    "description": "A powerful PHPUnit printer to make your tests output beautiful!",
+    "version": "0.1.0",
+    "authors": [
+        {
+            "name": "Yannis Foucher",
+            "homepage": "https://github.com/YaFou",
+            "role": "Owner"
+        }
+    ],
+    "homepage": "https://github.com/YaFou/PHPUnit-Printer",
+    "support": {
+        "issues": "https://github.com/YaFou/PHPUnit-Printer/issues",
+        "source": "https://github.com/YaFou/PHPUnit-Printer"
+    },
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true,
+        "preferred-install": {
+            "*": "dist"
+        }
+    },
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.1",
+        "phpunit/phpunit": "^7 || ^8 || ^9"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "YaFou\\PHPUnitPrinter\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "YaFou\\PHPUnitPrinter\\Tests\\": "tests/"
+        }
+    }
+}
